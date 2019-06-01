@@ -1,0 +1,14 @@
+@import '../Navbar.css';
+@import './Slider.css';
+@import './Banners/Welcome.css';
+@import './Stack.css';
+@import './Timer.css';
+@import './VideoandWho/Video.css';
+@import './Banners/Banner.css';
+@import './RulesandNews/RulesandRegulation.css';
+@import './RulesandNews/News.css';
+@import './Banners/CompetitionDetailBanner.css';
+@import '../Footer.css';
+@import './VideoandWho/Whoweare.css';
+@import './VideoandWho/VideoandWho.css';
+@import './RulesandNews/NewsandRules.css';

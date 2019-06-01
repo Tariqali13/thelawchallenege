@@ -1,0 +1,337 @@
+.Banner3 {
+    position: relative;
+    width: 80%;
+    padding: 40px 0px 40px 0px;
+    margin: 20px auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(9, 23, 102, 0.7)), to(rgba(9, 36, 153, 0.8))), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: -webkit-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: -o-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: linear-gradient(to top right, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background-size: cover !important;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-sizing: border-box;
+}
+
+.about_divider {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin: 40px 0px;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+@media(max-width:600px) {
+    .about_divider {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+    }
+    .About_sidebar {
+        margin: 40px 0px !important;
+        width: 100% !important;
+    }
+    .about_datils {
+        padding: 5px !important;
+    }
+    .about_data {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+}
+
+.about_datils {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 60px 20px 40px;
+}
+
+@media(max-width:768px) {
+    .about_datils {
+        padding: 20px 0px;
+    }
+}
+
+.about_data {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.stacks2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    overflow: hidden;
+    margin: 10px;
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+
+.Stackimage2 {
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 90%;
+    height: 220px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.Stackimage2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.Stackimage2:hover .Overflow_div, .Stackimage2:hover .Stack_color {
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+.About_sidebar {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    /* NEW - Chrome */
+    display: flex;
+    width: 140em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    margin: 0 10px;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.design3 {
+    width: 100%;
+    height: 3px;
+    margin: 10px 0px;
+    border-top: 1px solid slategray;
+    border-bottom: 1px solid slategray;
+}
+
+.main_para2 p {
+    position: relative;
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: darkslategray;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.rewards_points {
+    width: 95%;
+    text-align: left;
+}
+
+.heading2 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.heading2 h3 {
+    padding: 10px;
+    width: auto;
+    text-align: left;
+}
+
+.a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.disclouser_para {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.bullet_points2 {
+    padding: 5px 40px 0px 40px;
+    list-style: none;
+    display: block;
+}
+
+.bullet_points2:before {
+    content: '\f111';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -1.5em;
+    margin-top: 1em;
+    font-size: 0.5em;
+    color: #0074D9;
+}
+
+@media(max-width:600px) {
+    .Banner2 {
+        width: 100%;
+    }
+    .Banner3 {
+        position: relative;
+        width: 100%;
+    }
+}

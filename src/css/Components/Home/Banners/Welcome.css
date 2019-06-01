@@ -1,0 +1,90 @@
+.Welcome {
+    position: relative;
+    padding: 60px 50px 60px 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(9, 23, 102, 0.7)), to(rgba(9, 36, 153, 0.8))), url('../.../../../../../assets/images/slider1.jpg') no-repeat fixed !important;
+    background: -webkit-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider1.jpg') no-repeat fixed !important;
+    background: -o-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider1.jpg') no-repeat fixed !important;
+    background: linear-gradient(to top right, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider1.jpg') no-repeat fixed !important;
+    background-size: cover !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-sizing: border-box;
+}
+
+.Welcome h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+.Welcome p {
+    color: white;
+    padding: 20px 0px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+.Welcome button {
+    padding: 10px 30px 10px 30px;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.5em;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.Welcome button:hover {
+    background: white;
+    color: rgba(9, 23, 102, 0.7);
+}
+
+a button:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+@media(max-width:768px) {
+    .Welcome {
+        padding: 50px 60px 50px 60px !important;
+    }
+    .Welcome p {
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+@media(max-width:600px) {
+    .Welcome {
+        padding: 10px 10px 10px 10px !important;
+        width: 100%;
+    }
+    .Welcome p {
+        padding: 10px 10px 10px 10px;
+        font-size: 1em;
+    }
+    .Welcome button {
+        font-size: 1em;
+    }
+}

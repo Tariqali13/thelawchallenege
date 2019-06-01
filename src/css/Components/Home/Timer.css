@@ -1,0 +1,155 @@
+.Timer {
+    position: relative;
+    padding: 60px 50px 60px 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(9, 23, 102, 0.4)), to(rgba(9, 36, 153, 0.6))), url('../.../../../../assets/images/pic2.jpg') no-repeat fixed !important;
+    background: -webkit-linear-gradient(bottom left, rgba(9, 23, 102, 0.4), rgba(9, 36, 153, 0.6)), url('../.../../../../assets/images/pic2.jpg') no-repeat fixed !important;
+    background: -o-linear-gradient(bottom left, rgba(9, 23, 102, 0.4), rgba(9, 36, 153, 0.6)), url('../.../../../../assets/images/pic2.jpg') no-repeat fixed !important;
+    background: linear-gradient(to top right, rgba(9, 23, 102, 0.4), rgba(9, 36, 153, 0.6)), url('../.../../../../assets/images/pic2.jpg') no-repeat fixed !important;
+    background-size: cover !important;
+}
+
+.Timer h1 {
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 0px black;
+}
+
+p .message {
+    color: white;
+}
+
+.Timer p {
+    color: white;
+    font-size: 2em;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#days, #hours, #mins, #sec {
+    border: 1px solid white;
+    padding: 10px 20px 10px 20px;
+}
+
+@media(max-width:320px) {
+    #days, #hours, #mins, #sec {
+        border: 1px solid white;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+#days:hover, #hours:hover, #mins:hover, #sec:hover {
+    background: white;
+    color: #185096;
+}
+
+.Countdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+.Timer button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 30px 10px 30px;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 1.5em;
+    color: white;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Timer button:hover {
+    background: white;
+    color: rgba(9, 23, 102, 0.7);
+}
+
+.Timer a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+@media(max-width:768px) {
+    .Timer {
+        padding: 50px 60px 50px 60px !important;
+    }
+    .Timer p {
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:600px) {
+    .Timer h1 {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
+    .Timer {
+        padding: 10px 10px 10px 10px !important;
+    }
+    .Timer p {
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
+    .Timer button {
+        font-size: 1em;
+    }
+}
