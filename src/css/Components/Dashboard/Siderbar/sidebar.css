@@ -1,7 +1,6 @@
 .sidemain {
     width: 20%;
     height: 100vh;
-    background: black;
     display: -webkit-box;
     display: -ms-flexbox;
     position: fixed;
@@ -21,8 +20,6 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-
 
 /*Login Signup Page*/
 
@@ -231,7 +228,6 @@ li, ul {
     button, html [type="button"], [type="reset"], [type="submit"] {
         outline: medium none;
     }
-
 }
 
 @media(max-width: 992px) {
@@ -251,8 +247,9 @@ li, ul {
         width: 100%;
     }
 }
+
 @media(max-width: 600px) {
-   .sidemain {
-       display: none;
-   }
+    .sidemain {
+        display: none;
+    }
 }
