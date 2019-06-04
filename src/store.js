@@ -8,7 +8,7 @@ const inititalState = {};
 
 const store = createStore(
         rootReducer, 
-        initialState, 
+        inititalState, 
         composeWithDevTools(
             /* logger must be the last middleware in chain to log actions */
             applyMiddleware(thunk, logger)  
