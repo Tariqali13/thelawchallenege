@@ -18,14 +18,12 @@ class Gallery extends React.Component {
         this.setState({
           images: res.data
         });
-        console.log(res.data);
       })
       .catch(e => {
         console.log(e);
       });
   }
   render() {
-    console.log(this.state);
     let response = this.state.images.map((value, index) => {
       return (
         <MDBCol md="5" key={index}>

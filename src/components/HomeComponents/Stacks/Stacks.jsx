@@ -2,9 +2,12 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import {data} from '../../AllData/Stackdata';
 class Stacks extends Component {
-    data=data;
+    state={
+
+        data: data,
+    }
     render() {
-        let response = this.data.map((value, index) => {
+        let response = this.state.data.map((value, index) => {
             return (
                 <div className='Stacks' key={index}>
                     <div className='Stackimage'>

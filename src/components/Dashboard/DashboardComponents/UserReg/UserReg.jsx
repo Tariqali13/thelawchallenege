@@ -45,7 +45,6 @@ class UserReg extends Component {
   };
 
   render() {
-    console.log(this.state);
     const selectRow = {
       mode: "radio",
       clickToSelect: true,

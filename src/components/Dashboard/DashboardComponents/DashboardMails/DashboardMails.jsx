@@ -30,7 +30,6 @@ class DashboardMail extends Component {
         this.setState({
           products: res.data
         });
-        console.log(res.data);
       })
       .catch(e => {
         console.log(e);
@@ -51,7 +50,6 @@ class DashboardMail extends Component {
   };
 
   render() {
-    console.log(this.state);
     const selectRow = {
       mode: "radio",
       clickToSelect: true,

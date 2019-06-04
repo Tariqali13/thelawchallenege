@@ -21,7 +21,7 @@ export const handleSubmit = e => dispatch => {
   axios
     .post(`/send`, mails)
     .then(res => {
-      console.log("Data Send from actions", res);
+      console.log("Data Send from actions");
     })
     .catch(err => {
       console.log("error", err);
@@ -33,7 +33,6 @@ export const handleSubmit = e => dispatch => {
 };
 
 export const handleSubmit2 = e => dispatch => {
-  console.log("handleSubmit working", e);
   const Allmembers = {
     Member1_First_Name: e.Member1_First_Name,
     Member1_Last_Name: e.Member1_Last_Name,
@@ -72,7 +71,6 @@ export const handleSubmit2 = e => dispatch => {
 };
 
 export const NewsSubmit = e => dispatch => {
-  console.log("handleSubmit working", e);
   const Newsdata = {
     NewsTitle: e.e.NewsTitle,
     NewsText: e.e.NewsText,

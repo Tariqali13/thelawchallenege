@@ -21,7 +21,6 @@ class News extends Component {
                 this.setState({
                     carouselitem: res.data
                 })
-                console.log(res.data)
             })
             .catch(e => { console.log(e) })
     }
@@ -36,7 +35,6 @@ class News extends Component {
 
 
     render() {
-        console.log(this.state.carouselitem);
         let response = this.state.carouselitem.map((value, index) => {
             return (
                 <Carousel.Item key={index}>

@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { data } from '../../AllData/WhoweareData';
 class WhoWeAre extends Component {
-    data = data;
+    state={
+        data : data,
+
+    }
     render() {
-        let response = this.data.map((value, index) => {
+        let response = this.state.data.map((value, index) => {
             return (
                 <span className='bullet_points' key={index}>{value.span}</span>
             )

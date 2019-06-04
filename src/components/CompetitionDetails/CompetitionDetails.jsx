@@ -7,12 +7,12 @@ import { data2 } from '../AllData/CompetitionDetailData';
 import { data3 } from '../AllData/CompetitionDetailData';
 
 class CompetitionDetails extends Component {
-  data = data;
-  data2 = data2;
-  data3 = data3;
   state = {
     isHidden: true,
     id: 0,
+    data : data,
+    data2 : data2,
+    data3 : data3,
   };
   handleClick = e => {
     this.setState({
@@ -54,7 +54,7 @@ class CompetitionDetails extends Component {
         return maxStyles;
       }
     }
-    let response = this.data.map((value, index) => {
+    let response = this.state.data.map((value, index) => {
       return (
         <div className='comp_datils' key={index}>
           <div className='heading'>
@@ -66,7 +66,7 @@ class CompetitionDetails extends Component {
         </div>
       )
     })
-    let response2 = this.data2.map((item, index) => {
+    let response2 = this.state.data2.map((item, index) => {
       return (
         <div className="all_rules" key={index}>
           <div className="rules">
@@ -101,7 +101,7 @@ class CompetitionDetails extends Component {
       );
     });
 
-    let response3 = this.data3.map((value, index) => {
+    let response3 = this.state.data3.map((value, index) => {
       return (
         <div className='comp_datils' key={index}>
           <div className='heading'>

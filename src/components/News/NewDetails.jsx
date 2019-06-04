@@ -19,7 +19,6 @@ class NewDetails extends Component {
         this.setState({
           data: [res.data]
         });
-        console.log(res.data);
       })
       .catch(e => {
         console.log(e);
@@ -30,7 +29,6 @@ class NewDetails extends Component {
       <div>
         <Navbar />
         {this.state.data.map((value, index) => {
-          console.log(index);
 
           return (
             <div>

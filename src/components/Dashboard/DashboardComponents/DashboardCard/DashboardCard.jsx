@@ -15,7 +15,6 @@ class DashboardCards extends Component {
         this.setState({
           mails: res.data
         });
-        console.log(res.data);
       })
       .catch(e => {
         console.log(e);
@@ -27,7 +26,6 @@ class DashboardCards extends Component {
         this.setState({
           Images: res.data
         });
-        console.log(res.data);
       })
       .catch(e => {
         console.log(e);
@@ -39,7 +37,6 @@ class DashboardCards extends Component {
         this.setState({
           News: res.data
         });
-        console.log(res.data);
       })
       .catch(e => {
         console.log(e);
@@ -51,7 +48,6 @@ class DashboardCards extends Component {
         this.setState({
           Reg: res.data
         });
-        console.log(res.data);
       })
       .catch(e => {
         console.log(e);

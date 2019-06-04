@@ -12,7 +12,6 @@ class Dashboard extends Component {
     }
   }
   render() {
-    console.log(this.props);
     return (
       <section className="dashboard_section">
         <Sidebar />
