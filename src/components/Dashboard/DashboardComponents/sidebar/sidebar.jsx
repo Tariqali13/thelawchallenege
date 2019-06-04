@@ -26,7 +26,7 @@ class Sidebar extends Component {
             <div className="sidemain">
                 <div className="container-fluid display-table">
                     <div className="row display-table-row">
-                        <div className="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                        <div className="hidden-xs display-table-cell v-align box" id="navigation">
                             <div className="logo">
                                 <img src={require('../../../../assets/images/logo.png')} alt="merkery_logo" className="visible-xs visible-sm circle-logo" />
                             </div>

@@ -20,7 +20,6 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import UserReg from './components/Dashboard/DashboardComponents/UserReg/UserReg';
 import DashboardMails from './components/Dashboard/DashboardComponents/DashboardMails/DashboardMails';
-import DashboardMailsDetails from './components/Dashboard/DashboardComponents/DashboardMails/DashboardMailsDetails';
 import DashboardGallery from './components/Dashboard/DashboardComponents/DashboardGallery/DashboardGallery';
 import DashboardNews from './components/Dashboard/DashboardComponents/DashboardNews/DashboardNews';
 import { setCurrentUser, logoutUser } from './components/Store/Actions/Action';
@@ -60,7 +59,6 @@ class App extends Component {
             <Route path='/Dashboard' exact component={Dashboard}></Route >
             <Route path='/UserReg' exact component={UserReg}></Route >
             <Route path='/DashboardMails' exact component={DashboardMails}></Route >
-            <Route path="/DashboardMails/:id" component={DashboardMailsDetails} />
             <Route path='/DashboardGallery' exact component={DashboardGallery}></Route >
             <Route path='/DashboardNews' exact component={DashboardNews}></Route >
 

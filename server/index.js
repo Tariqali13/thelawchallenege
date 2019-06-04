@@ -10,7 +10,6 @@ const mongoose = require("mongoose");
 const config = require("./config/db");
 const passport = require("passport");
 module.require("./middleware")(app, express, mongoose);
-// const image = require('./models/image');
 
 // mongoose
 //   .connect(

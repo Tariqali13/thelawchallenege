@@ -16,7 +16,7 @@ class News extends Component {
         carouselitem: []
     };
     componentDidMount() {
-        axios.get("http://localhost:6600/News")
+        axios.get("/News")
             .then(res => {
                 this.setState({
                     carouselitem: res.data
