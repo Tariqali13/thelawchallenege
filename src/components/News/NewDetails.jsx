@@ -53,7 +53,7 @@ class NewDetails extends Component {
                         <Card.Text className="mt-5 mb-5 text-left">
                           {value.NewsText}
                           <br />
-                          <div className="mt-2 small">{value.NewsDec}</div>
+                          <div className="mt-2 small">{value.NewsDesc}</div>
                         </Card.Text>
                         <div className="text-left mt-5">
                           <Link to="/News">
