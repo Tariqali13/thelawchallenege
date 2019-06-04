@@ -72,10 +72,10 @@ export const handleSubmit2 = e => dispatch => {
 
 export const NewsSubmit = e => dispatch => {
   const Newsdata = {
-    NewsTitle: e.e.NewsTitle,
-    NewsText: e.e.NewsText,
-    NewsDesc: e.e.NewsDesc,
-    url: e.e.url
+    NewsTitle: e.NewsTitle,
+    NewsText: e.NewsText,
+    NewsDesc: e.NewsDesc,
+    url: e.url
   };
   axios
     .post(`/News`, Newsdata)

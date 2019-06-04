@@ -122,10 +122,10 @@ class DashboardNews extends Component {
 const mapStateToProps = (state) => {
     return {
         ...state,
-        name: state.name,
-        email: state.email,
-        subject: state.subject,
-        message: state.message,
+        NewsTitle: state.NewsTitle,
+        NewsText: state.NewsText,
+        NewsDesc: state.NewsDesc,
+        url: state.url
 
     }
 }
