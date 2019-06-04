@@ -1,45 +1,50 @@
-const helmet = require('helmet');
-const compression=require('compression');
-const debug = require('debug')("app:startup");
-const express = require('express');
+const helmet = require("helmet");
+const compression = require("compression");
+const debug = require("debug")("app:startup");
+const express = require("express");
 const app = express();
 const cors = require("cors");
-const multer = require("multer")
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const config = require('./config/db');
-const passport = require('passport');
-module.require('./middleware')(app, express);
+const multer = require("multer");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const config = require("./config/db");
+const passport = require("passport");
+module.require("./middleware")(app, express, mongoose);
 // const image = require('./models/image');
 
+// mongoose
+//   .connect(
+//     "mongodb+srv://vvorkclass103:s12345@cluster0-aoeoc.mongodb.net/test?retryWrites=true&w=majority",
+//     { useNewUrlParser: true }
+//   )
+//   .then(() => {
+//     console.log("db is connected");
+//   })
+//   .catch(err => {
+//     console.log("db is not connected", err);
+//   });
 
-mongoose.connect(config.DB, { useNewUrlParser: true })
-    .then(() => { console.log("db is connected") })
-    .catch((err) => { console.log('db is not connected', err) })
-
-app.use(cors());
-app.use(helmet());
-app.use(compression());
+// app.use(cors());
+// app.use(helmet());
+// app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(passport.initialize());
-require('./passport')(passport)
+require("./passport")(passport);
 
+const mailsroutes = module.require("./Routes/mail");
+app.use("/send", mailsroutes);
 
+const loginroutes = module.require("./Routes/login");
+app.use("/users", loginroutes);
 
-const mailsroutes = module.require("./Routes/mail")
-app.use("/send", mailsroutes)
+const userRegroutes = module.require("./Routes/userreg");
+app.use("/Reg", userRegroutes);
 
-const loginroutes = module.require("./Routes/login")
-app.use("/users", loginroutes)
+const newsroutes = module.require("./Routes/news");
+app.use("/News", newsroutes);
 
-const userRegroutes = module.require("./Routes/userreg")
-app.use("/Reg", userRegroutes)
-
-const newsroutes = module.require("./Routes/news")
-app.use("/News", newsroutes)
-
-const imageroutes=module.require('./Routes/images');
-app.use('/firebaseUploads',imageroutes);
+const imageroutes = module.require("./Routes/images");
+app.use("/firebaseUploads", imageroutes);
 
 // var storage = multer.diskStorage({
 //     destination: function (req, file, cb) {
@@ -89,4 +94,3 @@ app.use('/firebaseUploads',imageroutes);
 
 const port = process.env.PORT || 6600;
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
