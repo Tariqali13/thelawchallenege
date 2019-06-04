@@ -3,8 +3,8 @@ import Carousel from 'react-bootstrap/Carousel'
 import { data } from '../../AllData/SliderData';
 
 class Slider extends Component {
-    data = data;
     state = {
+        data : data,
         index: 0,
         direction: null,
     };
@@ -16,7 +16,7 @@ class Slider extends Component {
         });
     }
     render() {
-        let response = this.data.map((value, index) => {
+        let response = this.state.data.map((value, index) => {
             return (
                 <Carousel.Item key={index}>
                     <img
