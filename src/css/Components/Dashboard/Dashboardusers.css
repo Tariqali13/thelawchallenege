@@ -22,3 +22,6 @@ tr:nth-child(even) {
 .no-wrap {
     white-space: nowrap;
 }
+.No_Display_table{
+    display: none;
+}
