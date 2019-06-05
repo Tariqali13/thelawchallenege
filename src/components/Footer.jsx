@@ -41,7 +41,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright">
-                    THE LAW CHALLENGE GHANA &copy; 2019-ARIES DEVELOPERS
+                    THE LAW CHALLENGE GHANA &copy; 2019
             </div>
             </footer>
 

@@ -5,7 +5,7 @@ class DashboardFooter extends Component {
     render() { 
         return (  
             <footer className="Dashboard_footer">
-                  THE LAW CHALLENGE GHANA &copy; 2019-ARIES DEVELOPERS
+                  THE LAW CHALLENGE GHANA &copy; 2019
             </footer>
         );
     }
