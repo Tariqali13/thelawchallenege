@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel'
 import { data } from '../../AllData/SliderData';
 
@@ -33,23 +33,27 @@ class Slider extends Component {
             <div className="Slider_flex">
                 <div className="Sponsoradds">
                     <h3>Our Sponsors</h3>
-                    <Link><img className="Sponsors_image" src={require('../../../assets/images/slider1.jpg')}/></Link>
+                    <a href="#"><img className="Sponsors_image" src={require('../../../assets/images/sponsor.jpeg')} /></a>
+                    <a href="#"><img className="Sponsors_image" src={require('../../../assets/images/sponsor.jpeg')} /></a>
+                    <a href="#"><img className="Sponsors_image" src={require('../../../assets/images/sponsor.jpeg')} /></a>
                 </div>
-            <div className="slider">
-                <Carousel
-                    activeIndex={this.state.index}
-                    direction={this.state.direction}
-                    onSelect={this.handleSelect}
-                >
+                <div className="slider">
+                    <Carousel
+                        activeIndex={this.state.index}
+                        direction={this.state.direction}
+                        onSelect={this.handleSelect}
+                    >
 
-                    {response}
+                        {response}
 
-                </Carousel>
-            </div>
-            <div className="Sponsoradds">
-            <h3>Our Sponsors</h3>
+                    </Carousel>
+                </div>
+                <div className="Sponsoradds">
+                    <h3>Our Sponsors</h3>
 
-            <Link><img className="Sponsors_image" src={require('../../../assets/images/slider1.jpg')}/></Link>
+                    <a href="#"><img className="Sponsors_image" src={require('../../../assets/images/sponsor.jpeg')} /></a>
+                    <a href="#"><img className="Sponsors_image" src={require('../../../assets/images/sponsor.jpeg')} /></a>
+                    <a href="#"><img className="Sponsors_image" src={require('../../../assets/images/sponsor.jpeg')} /></a>
                 </div>
             </div>
         )

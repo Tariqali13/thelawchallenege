@@ -19,7 +19,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 40px 10px;
+    margin: 40px 30px;
 }
 
 .Slider_flex {
@@ -71,12 +71,28 @@
     color: cornflowerblue;
 }
 .Sponsors_image{
-    width: 200px;
-    height: 160px;
+    width: 180px;
+    height: 140px;
+    margin: 10px 0px;
 }
 
+@media(max-width:1024px) {
+    .Sponsors_image{
+        width: 140px;
+        height: 100px;
+        margin: 10px 0px;
+    }
+}
 @media(max-width:768px) {
-  
+    .Sponsors_image{
+        width: 100px;
+        height: 60px;
+        margin: 10px 0px;
+    }
+    .Sponsoradds h3{
+        color: cornflowerblue;
+        font-size: 1em;
+    }
 }
 
 @media(max-width:600px) {

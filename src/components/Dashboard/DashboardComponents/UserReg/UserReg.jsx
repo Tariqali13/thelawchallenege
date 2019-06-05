@@ -4,7 +4,7 @@ import Sidebar from "../sidebar/sidebar";
 import DashboardHeader from "../DashboardHeader/DashboardHeader";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
-import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+// import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
@@ -197,7 +197,7 @@ class UserReg extends Component {
               </Modal.Footer>
             </Modal>
           </div>
-          <ReactHTMLTableToExcel
+          {/* <ReactHTMLTableToExcel
                         id="test-table-xls-button"
                         className="download-table-xls-button"
                         table="table-to-xls"
@@ -270,7 +270,7 @@ class UserReg extends Component {
                                         </table>
                             )
                         })}
-                    </table>
+                    </table> */}
         </div>
       </div>
     );
