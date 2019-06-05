@@ -28,3 +28,7 @@
             justify-content: center;
     box-sizing: border-box;
 }
+.card_image_size{
+    width: 60% !important; 
+    height: 40% !important;
+}
