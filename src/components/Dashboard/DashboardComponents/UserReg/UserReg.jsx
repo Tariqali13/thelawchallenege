@@ -114,14 +114,8 @@ class UserReg extends Component {
                     <div>
                       {value._id === this.state.id ? (
                         <div>
-                          <ReactHTMLTableToExcel
-                            id="test-table-xls-button"
-                            className="download-table-xls-button"
-                            table="table-to-xls"
-                            filename="tablexls"
-                            sheet="tablexls"
-                            buttonText="Download as XLS" />
-                          <table id="table-to-xls">
+
+                          <table >
                             <thead>
                               <tr>
                                 <th>Headings</th>
