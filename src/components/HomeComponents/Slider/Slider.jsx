@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel'
 import { data } from '../../AllData/SliderData';
 
 class Slider extends Component {
+    data = data;
     state = {
-        data : data,
         index: 0,
         direction: null,
     };
@@ -16,7 +17,7 @@ class Slider extends Component {
         });
     }
     render() {
-        let response = this.state.data.map((value, index) => {
+        let response = this.data.map((value, index) => {
             return (
                 <Carousel.Item key={index}>
                     <img
@@ -29,6 +30,11 @@ class Slider extends Component {
             )
         })
         return (
+            <div className="Slider_flex">
+                <div className="Sponsoradds">
+                    <h3>Our Sponsors</h3>
+                    <Link><img className="Sponsors_image" src={require('../../../assets/images/slider1.jpg')}/></Link>
+                </div>
             <div className="slider">
                 <Carousel
                     activeIndex={this.state.index}
@@ -39,6 +45,12 @@ class Slider extends Component {
                     {response}
 
                 </Carousel>
+            </div>
+            <div className="Sponsoradds">
+            <h3>Our Sponsors</h3>
+
+            <Link><img className="Sponsors_image" src={require('../../../assets/images/slider1.jpg')}/></Link>
+                </div>
             </div>
         )
     };

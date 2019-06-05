@@ -63,7 +63,7 @@ class News extends Component {
             <h2>{value.NewsTitle}</h2>
           </Card.Title>
           <Card.Body>
-            <Card.Img variant="top" className="h-25" src={value.url} />
+            <Card.Img variant="top" className="h-25 w-25" src={value.url} />
             <Card.Text className="mt-5 mb-5 text-left">
               {value.NewsText}
             </Card.Text>
