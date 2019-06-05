@@ -64,7 +64,7 @@
     "validate.js": "^0.12.0",
     "validator": "^11.0.0",
     "video-react": "^0.13.7"
-  },
+    },
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
