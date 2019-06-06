@@ -113,9 +113,9 @@ class UserReg extends Component {
                   return (
                     <div>
                       {value._id === this.state.id ? (
-                        <div>
+                        <div  class="table-responsive">
 
-                          <table >
+                          <table class="table">
                             <thead>
                               <tr>
                                 <th>Headings</th>
