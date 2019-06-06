@@ -1,7 +1,7 @@
 export let data = [
     {
         heading: 'About the Organisers',
-        detail: 'The Law Challenge Ghana is an initiative of Touchworld Financial and Investment Consult, a company limited by shares  incorporated in Ghana since 2012. Its business object among other things is to provide Accounting and Taxation services;         Credit Management and Risk Management services; Fraud Investigation services and training and consultancy services. ',
+        detail: 'The Law Challenge Ghana is an initiative of Touchworld Financial and Investment Consult, a company limited by shares and incorporated in Ghana since 2012. Its business objective among other things is to provide "Accounting and Taxation Services", "Credit Management and Risk Management Services", "Fraud Investigation Services" and "Training and Consultancy Services". ',
         para: []
     },
     {
@@ -12,7 +12,7 @@ export let data = [
                 p1: "University of Ghana Faculty of Law-Legon",
             },
             {
-                p1: "GIMPA Faculty of Law-Achimota",
+                p1: "GIMPA is at Greenhill-Accra",
             },
             {
                 p1: "University of Cape Coast Faculty of Law- Cape Coast",
@@ -24,7 +24,7 @@ export let data = [
                 p1: "University of Professional Studies Accra (UPSA) Faculty of Law- Legon.",
             },
             {
-                p1: "Mount Crest University College Faculty of Law-Kanda.",
+                p1: "Mountcrest University College Faculty of Law-Kanda.",
             },
             {
                 p1: "Central University Faculty of Law- Miotso.",
