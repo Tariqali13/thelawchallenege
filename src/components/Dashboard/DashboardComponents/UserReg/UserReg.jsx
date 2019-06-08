@@ -4,6 +4,7 @@ import Sidebar from "../sidebar/sidebar";
 import DashboardHeader from "../DashboardHeader/DashboardHeader";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
@@ -197,7 +198,80 @@ class UserReg extends Component {
               </Modal.Footer>
             </Modal>
           </div>
+          <ReactHTMLTableToExcel
+                    id="test-table-xls-button"
+                    className="download-table-xls-button"
+                    table="table-to-xls"
+                    filename="tablexls"
+                    sheet="tablexls"
+                    buttonText="Download as XLS" />
+                <table id="table-to-xls">
+                    {this.state.products.map((value, index) => {
+                        return (
 
+                            <table className="No_Display_table">
+                                <thead>
+                                    <tr>
+                                        <th>Headings</th>
+                                        <th>Member 1</th>
+                                        <th>Member 2</th>
+                                        <th>Member 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">
+                                    <tr>
+                                        <td className="font-weight-bold">First Name</td>
+                                        <td>{value.Member1_First_Name}</td>
+                                        <td>{value.Member2_First_Name}</td>
+                                        <td>{value.Member3_First_Name}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold">Last Name</td>
+                                        <td>{value.Member1_Last_Name}</td>
+                                        <td>{value.Member2_Last_Name}</td>
+                                        <td>{value.Member3_Last_Name}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold">Name of Study Program</td>
+                                        <td>{value.Member1_NameofStudyProgram}</td>
+                                        <td>{value.Member2_NameofStudyProgram}</td>
+                                        <td>{value.Member3_NameofStudyProgram}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold">Faculty</td>
+                                        <td>{value.Member1_Faculty}</td>
+                                        <td>{value.Member2_Faculty}</td>
+                                        <td>{value.Member3_Faculty}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold">Study Year</td>
+                                        <td>{value.Member1_StudyYear}</td>
+                                        <td>{value.Member2_StudyYear}</td>
+                                        <td>{value.Member3_StudyYear}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold">Students Id Number</td>
+                                        <td>{value.Member1_StudentIdNumber}</td>
+                                        <td>{value.Member2_StudentIdNumber}</td>
+                                        <td>{value.Member3_StudentIdNumber}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold">Students Telephone Number</td>
+                                        <td>{value.Member1_TelephoneNumber}</td>
+                                        <td>{value.Member2_TelephoneNumber}</td>
+                                        <td>{value.Member3_TelephoneNumber}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="font-weight-bold">Students Email</td>
+                                        <td>{value.Member1_Email}</td>
+                                        <td>{value.Member2_Email}</td>
+                                        <td>{value.Member3_Email}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        )
+                    })}
+                </table>
         </div>
       </div>
     );
