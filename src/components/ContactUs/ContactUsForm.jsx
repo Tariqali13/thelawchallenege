@@ -25,9 +25,9 @@ class ContactForm extends Component {
         this.props.changeState(this.state);
         const data = this.state;
         const rules = {
-            name: "required|alpha|min:3|max:100",
+            name: "required|string|min:3|max:100",
             email: "required|email",
-            subject: "required|alpha|min:3|max:200",
+            subject: "required|string|min:3|max:200",
             message: "required|string|min:3",
         }
         const messages = {

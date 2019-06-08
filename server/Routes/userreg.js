@@ -8,9 +8,12 @@ router.post("/", (req, res)=> {
     let UserReg = new userReg(req.body);
     UserReg.save()
     .then(res => {
+      console.log("sucess")
       res.json(200, "Data is send to db", post);
     })
     .catch(err => {
+      console.log("error")
+
       res.json(404, "unable to save to database", err);
     });
     // res.json(req.body)
@@ -27,10 +30,7 @@ router.delete('/deluser', (req, res) => {
 });
 
 
-  router.post("/userreg", (req, res) => {
-    userReg.findById(req.body.id).then(resp => res.json(resp));
-  });
-  
+
   router.get("/", (req, res) => {
     userReg.find().then(resp => res.json(resp));
   })

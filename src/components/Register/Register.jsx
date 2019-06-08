@@ -8,7 +8,9 @@ import { validateAll } from 'indicative';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 class RegisterForm extends Component {
-    state = {}
+    state = {
+    
+    }
 
     componentDidMount = () => {
         // console.log(this.props);
@@ -19,30 +21,30 @@ class RegisterForm extends Component {
         this.props.changeState(this.state);
         const data = this.state;
         const rules = {
-            Member1_First_Name: "required|alpha|min:3|max:100",
-            Member2_First_Name: "required|alpha|min:3|max:100",
-            Member3_First_Name: "required|alpha|min:3|max:100",
-            Member1_Last_Name: "required|alpha|min:3|max:100",
-            Member2_Last_Name: "required|alpha|min:3|max:100",
-            Member3_Last_Name: "required|alpha|min:3|max:100",
+            Member1_First_Name: "required|string|min:3|max:100",
+            Member2_First_Name: "required|string|min:3|max:100",
+            Member3_First_Name: "required|string|min:3|max:100",
+            Member1_Last_Name: "required|string|min:3|max:100",
+            Member2_Last_Name: "required|string|min:3|max:100",
+            Member3_Last_Name: "required|string|min:3|max:100",
             Member1_Email:"required|email",
             Member2_Email:"required|email",
             Member3_Email:"required|email",
             Member1_StudyYear:"required|integer|max:10|min:3",
             Member2_StudyYear:"required|integer|max:10|min:3",
             Member3_StudyYear:"required|integer|max:10|min:3",
-            Member1_Faculty:"required|alpha|min:3|max:100",
-            Member2_Faculty:"required|alpha|min:3|max:100",
-            Member3_Faculty:"required|alpha|min:3|max:100",
+            Member1_Faculty:"required|string|min:3|max:100",
+            Member2_Faculty:"required|string|min:3|max:100",
+            Member3_Faculty:"required|string|min:3|max:100",
             Member1_StudentIdNumber:"required|alpha_numeric|min:3|max:20",
             Member2_StudentIdNumber:"required|alpha_numeric|min:3|max:20",
             Member3_StudentIdNumber:"required|alpha_numeric|min:3|max:20",
             Member1_TelephoneNumber:"required|integer|max:20|min:5",
             Member2_TelephoneNumber:"required|integer|max:20|min:5",
             Member3_TelephoneNumber:"required|integer|max:20|min:5",
-            Member1_NameofStudyProgram:"required|alpha|min:3|max:150",
-            Member2_NameofStudyProgram:"required|alpha|min:3|max:150",
-            Member3_NameofStudyProgram:"required|alpha|min:3|max:150",
+            Member1_NameofStudyProgram:"required|string|min:3|max:150",
+            Member2_NameofStudyProgram:"required|string|min:3|max:150",
+            Member3_NameofStudyProgram:"required|string|min:3|max:150",
 
         }
         const messages = {
@@ -275,14 +277,30 @@ class RegisterForm extends Component {
 }
 const mapStateToProps = (state) => {
     return {
-        fname: state.fname,
-        lname: state.lname,
-        nameofStudyProgram: state.nameofStudyProgram,
-        studyYear: state.studyYear,
-        faculty: state.faculty,
-        studentIdNumber: state.studentIdNumber,
-        telephoneNumber: state.telephoneNumber,
-        email: state.email,
+        Member1_First_Name: state.Member1_First_Name,
+        Member1_Last_Name: state.Member1_Last_Name,
+        Member1_Email: state.Member1_Email,
+        Member1_StudyYear: state.Member1_StudyYear,
+        Member1_Faculty: state.Member1_Faculty,
+        Member1_StudentIdNumber: state.Member1_StudentIdNumber,
+        Member1_TelephoneNumber: state.Member1_TelephoneNumber,
+        Member1_NameofStudyProgram: state.Member1_NameofStudyProgram,
+        Member2_First_Name: state.Member2_First_Name,
+        Member2_Last_Name: state.Member2_Last_Name,
+        Member2_Email: state.Member2_Email,
+        Member2_StudyYear: state.Member2_StudyYear,
+        Member2_Faculty: state.Member2_Faculty,
+        Member2_StudentIdNumber: state.Member2_StudentIdNumber,
+        Member2_TelephoneNumber: state.Member2_TelephoneNumber,
+        Member2_NameofStudyProgram: state.Member2_NameofStudyProgram,
+        Member3_First_Name: state.Member3_First_Name,
+        Member3_Last_Name: state.Member3_Last_Name,
+        Member3_Email: state.Member3_Email,
+        Member3_StudyYear: state.Member3_StudyYear,
+        Member3_Faculty: state.Member3_Faculty,
+        Member3_StudentIdNumber: state.Member3_StudentIdNumber,
+        Member3_TelephoneNumber: state.Member3_TelephoneNumber,
+        Member3_NameofStudyProgram: state.Member3_NameofStudyProgram
     }
 }
 const mapDispatchToProps = dispatch => {

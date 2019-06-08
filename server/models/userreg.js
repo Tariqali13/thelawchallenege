@@ -37,11 +37,7 @@ const UserReg = new Schema({
         require: true,
         minlength: 3,
         maxlength: 10,
-        validate: function (v) {
-            var re =/^\d+$/;
-            return (v == null || v.trim().length < 1) || re.test(v)
-        },
-        message: 'Provided Phone Number Format is invalid.'
+      
     },
     Member1_Faculty: {
         type: String,
@@ -70,11 +66,7 @@ const UserReg = new Schema({
         require: true,
         minlength: 3,
         maxlength: 20,
-        validate: function (v) {
-            var re =/^\d+$/;
-            return (v == null || v.trim().length < 1) || re.test(v)
-        },
-        message: 'Provided Phone Number Format is invalid.'
+      
     },
     Member1_NameofStudyProgram: {
         type: String,
@@ -91,7 +83,6 @@ const UserReg = new Schema({
     Member2_First_Name: {
         type: String,
         require: true,
-
         minlength: 3,
         maxlength: 100,
         validate: function (v) {
@@ -125,11 +116,7 @@ const UserReg = new Schema({
         require: true,
         minlength: 3,
         maxlength: 10,
-        validate: function (v) {
-            var re =/^\d+$/;
-            return (v == null || v.trim().length < 1) || re.test(v)
-        },
-        message: 'Provided Phone Number Format is invalid.'
+       
     },
     Member2_Faculty: {
         type: String,
@@ -158,11 +145,7 @@ const UserReg = new Schema({
         require: true,
         minlength: 3,
         maxlength: 20,
-        validate: function (v) {
-            var re =/^\d+$/;
-            return (v == null || v.trim().length < 1) || re.test(v)
-        },
-        message: 'Provided Phone Number Format is invalid.'
+      
     },
     Member2_NameofStudyProgram: {
         type: String,
@@ -212,11 +195,7 @@ const UserReg = new Schema({
         require: true,
         minlength: 3,
         maxlength: 10,
-        validate: function (v) {
-            var re =/^\d+$/;
-            return (v == null || v.trim().length < 1) || re.test(v)
-        },
-        message: 'Provided Phone Number Format is invalid.'
+      
     },
     Member3_Faculty: {
         type: String,
@@ -245,11 +224,6 @@ const UserReg = new Schema({
         require: true,
         minlength: 3,
         maxlength: 20,
-        validate: function (v) {
-            var re =/^\d+$/;
-            return (v == null || v.trim().length < 1) || re.test(v)
-        },
-        message: 'Provided Phone Number Format is invalid.'
        
     },
     Member3_NameofStudyProgram: {

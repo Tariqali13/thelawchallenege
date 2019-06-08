@@ -53,7 +53,7 @@ class UserReg extends Component {
       products: mail
     })
 
-    axios.delete('http://localhost:6600/Reg/deluser', {
+    axios.delete('/Reg/deluser', {
       data: {
         id: row._id,
       },

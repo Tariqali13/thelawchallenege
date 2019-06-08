@@ -25,7 +25,7 @@ class DashboardMail extends Component {
         }
     }
     componentDidMount() {
-        axios.get("http://localhost:6600/send")
+        axios.get("/send")
             .then(res => {
                 this.setState({
                     products: res.data
@@ -66,7 +66,7 @@ class DashboardMail extends Component {
             products: mail
         })
    
-        axios.delete('http://localhost:6600/send/deldata', {
+        axios.delete('/send/deldata', {
             data: {
               id: row._id,
             },
