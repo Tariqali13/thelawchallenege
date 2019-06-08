@@ -64,18 +64,6 @@ class UserReg extends Component {
     return (<div> <i className="fa fa-eye dashboard_icon dashboard_icon_view" onClick={() => this.onSelects(cell, row, rowIndex)} >{rowIndex}</i> <i className="fa fa-trash dashboard_icon dashboard_icon_del" onClick={() => this.handleDelete(cell, row, rowIndex)} >{rowIndex}</i></div>);
   }
   render() {
-    const selectRow = {
-      mode: "radio",
-      clickToSelect: true,
-      columnWidth: "60px",
-      bgColor: function (row, isSelect) {
-        if (isSelect) {
-          const { id } = row;
-          return "blue";
-        }
-        return null;
-      }
-    };
 
     const options = {
       sizePerPageList: [
@@ -106,7 +94,6 @@ class UserReg extends Component {
               data={this.state.products}
               pagination
               options={options}
-              selectRow={selectRow}
             >
               <TableHeaderColumn dataField="_id" isKey={true}>
                 id
