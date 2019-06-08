@@ -107,3 +107,6 @@ header {
         opacity: 0;
     }
 }
+.smal_nav_menu{
+    font-size: 0.7em !important;
+}

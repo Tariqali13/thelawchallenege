@@ -34,10 +34,10 @@ class Navbar extends Component {
                                 <Link to="/ContactUs"  className="nav-link  custom_navbar">CONTACT US</Link>
                             </li>
                             <li className="nav-items  custom_navitem">
-                                <Link to="/Register"className="nav-link  custom_navbar">REGISTRATION</Link>
+                                <Link to="/Register"className="nav-link  custom_navbar smal_nav_menu">REGISTRATION</Link>
                             </li>
                             <li className="nav-items  custom_navitem">
-                                <Link to="/Login" className="nav-link  custom_navbar">ADMIN LOGIN</Link>
+                                <Link to="/Login" className="nav-link  custom_navbar smal_nav_menu">ADMIN LOGIN</Link>
                             </li>
                             {/* <li className="nav-items  custom_navitem">
                                 <Link to="/Registeruser" className="nav-link  custom_navbar">Register</Link>
