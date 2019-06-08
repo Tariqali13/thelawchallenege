@@ -21,12 +21,12 @@ class RegisterForm extends Component {
         this.props.changeState(this.state);
         const data = this.state;
         const rules = {
-            Member1_First_Name: "required|string|min:3|max:100",
-            Member2_First_Name: "required|string|min:3|max:100",
-            Member3_First_Name: "required|string|min:3|max:100",
-            Member1_Last_Name: "required|string|min:3|max:100",
-            Member2_Last_Name: "required|string|min:3|max:100",
-            Member3_Last_Name: "required|string|min:3|max:100",
+            Member1_First_Name: "required|alpha|min:3|max:100",
+            Member2_First_Name: "required|alpha|min:3|max:100",
+            Member3_First_Name: "required|alpha|min:3|max:100",
+            Member1_Last_Name: "required|alpha|min:3|max:100",
+            Member2_Last_Name: "required|alpha|min:3|max:100",
+            Member3_Last_Name: "required|alpha|min:3|max:100",
             Member1_Email:"required|email",
             Member2_Email:"required|email",
             Member3_Email:"required|email",

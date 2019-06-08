@@ -37,7 +37,6 @@ const UserReg = new Schema({
         require: true,
         minlength: 3,
         maxlength: 10,
-      
     },
     Member1_Faculty: {
         type: String,
