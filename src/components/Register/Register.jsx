@@ -51,6 +51,8 @@ class RegisterForm extends Component {
             required: 'This {{field}} is required',
             'email.email': 'The email is required',
             alpha: 'This {{field}} must use only characters',
+            alpha_numeric: 'This {{field}} must use only alpha numeric characters',
+
         }
         validateAll(data, rules, messages)
             .then(() => {
