@@ -62,3 +62,16 @@
 .DetailMail h5{
     display: inline;
 }
+.dashboard_icon{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.dashboard_icon:hover{
+color: black;
+}
+.dashboard_icon_view{
+    color: blue;
+}
+.dashboard_icon_del{
+    color: red;
+}
