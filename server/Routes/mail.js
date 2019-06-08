@@ -18,20 +18,19 @@ router.post("/", (req, res) => {
 });
 
 
-
-router.post("/mails", (req, res) => {
-  console.log(req.body)
-  Mail.findById(req.body.id).then(resp => res.json(resp));
+router.delete('/deldata', (req, res) => {
+  const { id } = req.body;
+  Mail.findByIdAndRemove(id, (err) => {
+    if (err) return res.send(err);
+    return res.json({ success: true });
+  });
 });
+
+
+
+
 router.get("/", (req, res) => {
   Mail.find().then(resp => res.json(resp));
 })
-
-// function Validategenre(genre){
-//   const schema={
-//       name:Joi.string().min(3).required()
-//   }
-//   return Joi.validate(genre,schema);
-// }
 
 module.exports = router;
