@@ -17,8 +17,17 @@ router.post("/", (req, res)=> {
 
   });
 
+  
+router.delete('/deluser', (req, res) => {
+  const { id } = req.body;
+  userReg.findByIdAndRemove(id, (err) => {
+    if (err) return res.send(err);
+    return res.json({ success: true });
+  });
+});
+
+
   router.post("/userreg", (req, res) => {
-    console.log(req.body)
     userReg.findById(req.body.id).then(resp => res.json(resp));
   });
   

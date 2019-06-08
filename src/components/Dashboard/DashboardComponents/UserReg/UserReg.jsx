@@ -31,25 +31,43 @@ class UserReg extends Component {
     });
   }
 
-  onSelectAccount = row => {
-    //error occur in this setState
-    // this.setState({ selectedUserId: row.userId });
-    this.setState({
-      // modalShow: true,
-      id: row._id,
-      show: true
-    });
-  };
+
   handleClose = () => {
     this.setState({ show: false });
   };
+  onSelects = (cell, row, rowIndex) => {
+    console.log(this.state)
 
+    this.setState({
+      id: row._id,
+      show: true
+    })
+  }
+  handleDelete = (cell, row, rowIndex) => {
+    // this.props.changeState(this.state);
+    let mail = this.state.products;
+    mail.splice(row._id, 1)
+
+    this.setState({
+      id: row._id,
+      products: mail
+    })
+
+    axios.delete('http://localhost:6600/Reg/deluser', {
+      data: {
+        id: row._id,
+      },
+    });
+
+  }
+  buttonFormatter = (cell, row, rowIndex) => {
+    return (<div> <i className="fa fa-eye dashboard_icon dashboard_icon_view" onClick={() => this.onSelects(cell, row, rowIndex)} >{rowIndex}</i> <i className="fa fa-trash dashboard_icon dashboard_icon_del" onClick={() => this.handleDelete(cell, row, rowIndex)} >{rowIndex}</i></div>);
+  }
   render() {
     const selectRow = {
       mode: "radio",
       clickToSelect: true,
       columnWidth: "60px",
-      onSelect: this.onSelectAccount,
       bgColor: function (row, isSelect) {
         if (isSelect) {
           const { id } = row;
@@ -102,6 +120,8 @@ class UserReg extends Component {
               <TableHeaderColumn dataField="Member1_Email">
                 Email
               </TableHeaderColumn>
+              <TableHeaderColumn dataField="button" dataFormat={this.buttonFormatter}>Actions</TableHeaderColumn>
+
             </BootstrapTable>
 
             <Modal show={this.state.show} onHide={this.handleClose} size="lg">
@@ -113,7 +133,7 @@ class UserReg extends Component {
                   return (
                     <div>
                       {value._id === this.state.id ? (
-                        <div  class="table-responsive">
+                        <div class="table-responsive">
 
                           <table class="table">
                             <thead>
