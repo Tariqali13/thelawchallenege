@@ -6,16 +6,16 @@ header {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     background: -webkit-gradient(linear, right bottom, left top, from(rgba(31, 51, 69, 0.8)), to(rgba(31, 51, 69, 0.6))), url('../../assets/images/top_sub_banner.jpg') !important;
     background: -webkit-linear-gradient(bottom right, rgba(31, 51, 69, 0.8), rgba(31, 51, 69, 0.6)), url('../../assets/images/top_sub_banner.jpg') !important;
     background: -o-linear-gradient(bottom right, rgba(31, 51, 69, 0.8), rgba(31, 51, 69, 0.6)), url('../../assets/images/top_sub_banner.jpg') !important;
@@ -23,30 +23,33 @@ header {
     background-size: cover !important;
 }
 
-.navbar{
+.navbar {
     width: 100%;
 }
+
 .main_nav ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center;
     list-style: none;
     font-size: 1.1em;
+   
+    margin: 0px 10px 0px 0px;
 }
 
 .main_nav ul li::after {
@@ -54,45 +57,44 @@ header {
     display: block;
     width: 2px;
     opacity: 0;
-    -webkit-transform: translateX(-20px);
-        -ms-transform: translateX(-20px);
-            transform: translateX(-20px);
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
     height: 19px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     background: #ffffff;
-}
-
-.main_nav ul li::before {
+} 
+ .main_nav ul li::before {
     content: '';
     display: block;
     width: 2px;
     height: 19px;
     opacity: 0;
-    -webkit-transform: translateX(20px);
-        -ms-transform: translateX(20px);
-            transform: translateX(20px);
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
     background: #ffffff;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-
-.main_nav  ul li:hover::after, ul li:hover::before {
+/* 
+.main_nav ul li:hover::after, ul li:hover::before {
     -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
     background: #0fdfe2;
     opacity: 1;
-}
+} */
 
-.main_nav  ul li a {
+.main_nav ul li a {
     color: white !important;
 }
 
 .main_nav ul li:hover a {
-    color: #0fdfe2 !important;
+    color: #0fdfe2 ;
 }
 
 @media(max-width:600px) {
@@ -101,12 +103,18 @@ header {
     }
     .main_nav ul li:hover::after, ul li:hover::before {
         -webkit-transform: translateX(0px);
-            -ms-transform: translateX(0px);
-                transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
         background: #0fdfe2;
         opacity: 0;
     }
 }
-.smal_nav_menu{
+
+.smal_nav_menu {
     font-size: 0.7em !important;
+}
+.main_nav ul li .active{
+    box-shadow:1px 1px 0.1px black;
+    border: 1px solid black;
+    color: #0fdfe2 !important;
 }
