@@ -20,12 +20,14 @@ class About extends Component {
                         <h3>{value.heading}</h3>
                         <div className='design3'></div>
                     </div>
+                    <div className='info'>
                     <p>
                         {value.detail}
                         {value.para.map((item, index) => {
                             return <span className='bullet_points2' key={index}>{item.p1}</span>
                         })}
                     </p>
+                    </div>
                 </div>
             )
         })
