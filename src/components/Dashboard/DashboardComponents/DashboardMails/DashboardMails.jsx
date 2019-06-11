@@ -25,6 +25,10 @@ class DashboardMail extends Component {
         }
     }
     componentDidMount() {
+        if (this.props.auth.isAuthenticated === false) {
+            this.props.history.replace("/login")
+        }
+        else{
         axios.get("/send")
             .then(res => {
                 this.setState({
@@ -33,6 +37,7 @@ class DashboardMail extends Component {
                 console.log(res.data)
             })
             .catch(e => { console.log(e) })
+        }
     }
 
 
