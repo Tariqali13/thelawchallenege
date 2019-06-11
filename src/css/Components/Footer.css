@@ -349,7 +349,9 @@ textarea {
     -ms-flex-pack: center;
     justify-content: center;
 }
-
+.adressing p{
+    word-break: break-all;
+}
 .add {
     width: 100%;
     display: -webkit-box;

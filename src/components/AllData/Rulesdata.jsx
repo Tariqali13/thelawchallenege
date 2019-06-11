@@ -4,7 +4,7 @@ export let data = [
       heading: "Format",
       para: [
         {
-          p1: "It will be in four stages, namely; Preliminary, Quarter Final, Semi Final and Grand Finale.",
+          p1: "It will be in three stages, namely; Preliminary, Semi Final and Grand Finale.",
 
         },
         {
@@ -47,7 +47,7 @@ export let data = [
     },
 
     {
-      heading: "ROUND-2 (Rules for Buzzer Round)- Criminal; Contract; Tort; Company; Ghana Legal Systems; Environmental and Labour",
+      heading: "ROUND-2 (Rules for Buzzer Round)- Criminal, Contract, Torts Company, Ghana Legal Systems, Commercial Law",
       para: [
         {
           p1:

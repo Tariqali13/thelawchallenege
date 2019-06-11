@@ -28,13 +28,13 @@ module.require("./middleware")(app, express, mongoose);
 // app.use(compression());
 
 
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, './build'), function(err) {
-      if (err) {
-        res.status(500).send(err)
-      }
-    })
-})
+// app.get('/*', function(req, res) {
+//     res.sendFile(path.join(__dirname, './build'), function(err) {
+//       if (err) {
+//         res.status(500).send(err)
+//       }
+//     })
+// })
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(passport.initialize());
 require("./passport")(passport);

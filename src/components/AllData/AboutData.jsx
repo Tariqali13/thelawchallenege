@@ -82,7 +82,7 @@ export let data = [
     },
     {
         heading: 'Resource Persons',
-        detail: 'Resource persons will be responsible for setting questions and tasks for the challenge. Technical and resource persons identified for the project are; -',
+        detail: 'Resource persons will be responsible for setting questions and other technical services for the Law Challenge. The resource persons identified for the project are:',
         para: [
             {
                 p1: "Judges/Magistrates",
@@ -125,9 +125,6 @@ export let data = [
             },
             {
                 p1: "National Commission on Civic Education (NCCE)",
-            },
-            {
-                p1: "General Legal Council (GLC).",
             },
             {
                 p1: "Ghana Bar Association (GBA).",
@@ -223,7 +220,12 @@ export let data = [
             {
                 p1: "Justice Ato Mills-Graves (Rtd.)",
             },
-
+            {
+                p1:"Justice Eric Kyei Baffour"
+            },
+            {
+                p1:" Mr. Yaw D. Oppong Esq"
+            },
 
         ]
     },
