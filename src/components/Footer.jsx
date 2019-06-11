@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -24,24 +24,26 @@ const Footer = () => {
                         <div className="add"> <i className="material-icons">phone</i>
                             <p>+233-244624425<br /> +233-244386029</p>
                         </div>
-                        <div className="mails"> <i className="fa fa-envelope" ></i>
-                            <p>mbankrah11@gmail.com</p>
-                            <p>glawchallenge19@gmail.com</p>
+                        <div className="add"> <i className="fa fa-envelope" ></i>
+                            <div className="mails">
+                                <p>mbankrah11@gmail.com</p>
+                                <p>glawchallenge19@gmail.com</p>
+                            </div>
                         </div>
 
                     </address>
                     <div className="aboutUs_icons">
                         <h4>Upcomming News</h4>
-                        
+
                     </div>
 
                     <div className="aboutUs_icons">
                         <h4>Subscribe Us</h4>
                         <div className="social_icons">
                             <a target="_black" href="https://www.facebook.com/thelawchallenge"><i className="fab fa-facebook-f"></i></a>
-                            <a  target="_black" href="https://www.instagram.com/thelawchallengeghana/"><i className="fab fa-instagram"></i></a>
-                            <a  target="_black" href="https://www.linkedin.com/showcase/thelawchallengeghana"><i className="fab fa-linkedin-in"></i></a>
-                            <a  target="_black" href="https://twitter.com/thelawchallenge"><i className="fab fa-twitter"></i></a>
+                            <a target="_black" href="https://www.instagram.com/thelawchallengeghana/"><i className="fab fa-instagram"></i></a>
+                            <a target="_black" href="https://www.linkedin.com/showcase/thelawchallengeghana"><i className="fab fa-linkedin-in"></i></a>
+                            <a target="_black" href="https://twitter.com/thelawchallenge"><i className="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
