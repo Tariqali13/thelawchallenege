@@ -29,7 +29,7 @@ module.require("./middleware")(app, express, mongoose);
 
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, './public'), function(err) {
+    res.sendFile(path.join(__dirname, '../public'), function(err) {
       if (err) {
         res.status(500).send(err)
       }
