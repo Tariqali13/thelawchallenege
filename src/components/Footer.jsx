@@ -25,7 +25,7 @@ const Footer = () => {
                             <p>+233-244624425<br /> +233-244386029</p>
                         </div>
                         <div className="add"> <i className="fa fa-envelope" ></i>
-                            <p>mbankrah11@gmail.com</p>
+                            <p>mbankrah11@gmail.com</p><br>
                             <p>glawchallenge19@gmail.com</p>
                         </div>
 
