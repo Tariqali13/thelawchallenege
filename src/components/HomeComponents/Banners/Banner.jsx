@@ -6,7 +6,7 @@ const Banner = () => {
             <div className='Banner_main'>
                 <h1>How Much Law Do You Know?</h1>
                 <p>Follow our Journey from Beginning to End.</p>
-                <Link to='#' className='Link' ><button>Watch the Videos</button></Link>
+                <a href='https://www.youtube.com/channel/UCpcJIbDqB-jPeGXLxfiy4qw' className='Link' ><button>Watch the Videos</button></a>
             </div>
         </section>
     );
