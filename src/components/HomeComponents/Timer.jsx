@@ -74,7 +74,7 @@ class Timer extends Component {
             <div className="Timer">
                 <h1>The LAW CHALLENGE, GHANA</h1>
                 <p>We propose to run the project during the legal vacation period, from July to September.</p>
-                <p>The maiden edition to be hosted on 31st July 2019 at 4pm</p>
+                <p>The maiden edition to be hosted on 31st July 2019 at 4pm.</p>
                 {this.state.message !== "" ? <p id='mesage' >{this.state.message}</p> : <p id="mesage">{" Starting Soon"}</p>}
                 <div className="Countdown">
                     <p id="days">{days}</p>
