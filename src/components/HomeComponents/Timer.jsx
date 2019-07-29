@@ -13,16 +13,9 @@ class Timer extends Component {
         message: "",
         defaultval: "",
     }
-    // state = {
-    // date:new Date("July 5, 2019").getTime(),
-    // now:new Date().getTime(),
-    // distance:date-now,
-    //     days: new Date().toLocaleString(),
-    // }
-    // days:Math.floor((distance/(1000*60*60*24))),
-
+  
     componentDidMount() {
-        var countDownDate = new Date("July 5, 2019 ").getTime();
+        var countDownDate = new Date("July 31, 2019 ").getTime();
         var days; var hours; var minutes; var seconds;
         const test = (days, hours, minutes, seconds) => {
             this.seting(days, hours, minutes, seconds)
@@ -81,7 +74,7 @@ class Timer extends Component {
             <div className="Timer">
                 <h1>The LAW CHALLENGE, GHANA</h1>
                 <p>We propose to run the project during the legal vacation period, from July to September.</p>
-                <p>The maiden edition to be hosted in July 2019.</p>
+                <p>The maiden edition to be hosted on 31st July 2019 at 4pm</p>
                 {this.state.message !== "" ? <p id='mesage' >{this.state.message}</p> : <p id="mesage">{" Starting Soon"}</p>}
                 <div className="Countdown">
                     <p id="days">{days}</p>
