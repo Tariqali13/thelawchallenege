@@ -99,6 +99,13 @@ app.use("/firebaseUploads", imageroutes);
 // app.get("/firebaseUploads",(req,res)=>{
 // image.find().then(resp=>res.json(resp))
 // })
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, './build'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+})
 
 const port = process.env.PORT || 6600;
 app.listen(port, () => console.log(`Listening on port ${port}`));
