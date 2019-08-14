@@ -1,5 +1,5 @@
 import React from 'react';
-import { Player } from 'video-react';
+// import { Player } from 'video-react';
 const Video = () => {
     return (
 
