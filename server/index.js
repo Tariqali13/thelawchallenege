@@ -11,6 +11,9 @@ const config = require("./config/db");
 const passport = require("passport");
 module.require("./middleware")(app, express, mongoose);
 
+
+app.use(express.static(path.resolve(__dirname, "../../build")));
+  app.use(bodyParser.json());
 // mongoose
 //   .connect(
 //     "mongodb+srv://vvorkclass103:s12345@cluster0-aoeoc.mongodb.net/test?retryWrites=true&w=majority",
@@ -101,7 +104,7 @@ app.use("/firebaseUploads", imageroutes);
 // })
 app.get('*', function(req, res) {
   res.sendFile(path.resolve(__dirname, '../build'), function(err) {
-  
+  if(err) return res.status(500).send(err);
   })
 })
 
