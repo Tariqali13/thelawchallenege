@@ -40,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <Router basename="/">
           <Switch>
             <Route path='/' exact component={Home}></Route>
             {/* <Route path='/Home' exact component={Home}></Route> */}
