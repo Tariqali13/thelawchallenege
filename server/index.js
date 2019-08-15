@@ -99,10 +99,10 @@ app.use("/firebaseUploads", imageroutes);
 // app.get("/firebaseUploads",(req,res)=>{
 // image.find().then(resp=>res.json(resp))
 // })
-app.get('/*', function(req, res) {
+app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, '../build/index.html'), function(err) {
     if (err) {
-      res.status(300).send(err)
+      res.status(500).send(err)
     }
   })
 })
