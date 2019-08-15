@@ -12,7 +12,7 @@ const passport = require("passport");
 module.require("./middleware")(app, express, mongoose);
 
 
-app.use(express.static(path.resolve(__dirname, "../../build")));
+app.use(express.static(path.resolve(__dirname, "../build")));
   app.use(bodyParser.json());
 // mongoose
 //   .connect(
