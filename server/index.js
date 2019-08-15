@@ -9,9 +9,24 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const config = require("./config/db");
 const passport = require("passport");
-module.require("./middleware")(app, express, mongoose);
+// module.require("./middleware")(app, express, mongoose);
 
 
+app.use(express.static(path.resolve(__dirname, "../build")));
+  app.use(bodyParser.json());
+  mongoose
+    .connect(
+      "mongodb://TheLawChalleneg:s1234567@thelawchallenge-shard-00-00-pria4.mongodb.net:27017,thelawchallenge-shard-00-01-pria4.mongodb.net:27017,thelawchallenge-shard-00-02-pria4.mongodb.net:27017/test?ssl=true&replicaSet=TheLawChallenge-shard-0&authSource=admin&retryWrites=true&w=majority",
+      { useNewUrlParser: true }
+    )
+    .then(() => {
+      console.log("db is connected");
+    })
+    .catch(err => {
+      console.log("db is not connected", err);
+    });
+  mongoose.Promise = global.Promise;
+  mongoose.set("bufferCommands", false);
 // mongoose
 //   .connect(
 //     "mongodb+srv://vvorkclass103:s12345@cluster0-aoeoc.mongodb.net/test?retryWrites=true&w=majority",
@@ -100,7 +115,11 @@ app.use("/firebaseUploads", imageroutes);
 // app.get("/firebaseUploads",(req,res)=>{
 // image.find().then(resp=>res.json(resp))
 // })
-
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname, '../build'), function(err) {
+  if(err) return res.status(500).send(err);
+  })
+})
 
 const port = process.env.PORT || 6600;
 app.listen(port, () => console.log(`Listening on port ${port}`));
