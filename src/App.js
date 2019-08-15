@@ -52,7 +52,7 @@ class App extends Component {
             <Route path='/Login' exact component={Login}></Route >
             {/* <Route path='/Registeruser' exact component={Registeruser}></Route >   */}
 
-            <Route path="/News/:id" component={NewDetails} />
+            <Route path="/News/:id" exact component={NewDetails} />
             <Route path='/Sponsorship' exact component={Sponsorship}></Route >
             <Route path='/RewardandPrizes' exact component={RewardandPrizes}></Route >
             <Route path='/CompetitionDetails' exact component={CompetitionDetails}></Route>
