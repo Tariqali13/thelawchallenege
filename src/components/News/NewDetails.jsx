@@ -14,7 +14,7 @@ class NewDetails extends Component {
   };
   componentDidMount() {
     axios
-      .post("/News/news", { id: this.props.match.params.id })
+      .post("/api/News/news", { id: this.props.match.params.id })
       .then(res => {
         this.setState({
           data: [res.data]

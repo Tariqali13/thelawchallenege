@@ -52,7 +52,7 @@ const userRegroutes = module.require("./Routes/userreg");
 app.use("/Reg", userRegroutes);
 
 const newsroutes = module.require("./Routes/news");
-app.use("/News", newsroutes);
+app.use("/api/News", newsroutes);
 
 const imageroutes = module.require("./Routes/images");
 app.use("/firebaseUploads", imageroutes);

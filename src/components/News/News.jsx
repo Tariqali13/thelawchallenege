@@ -14,7 +14,7 @@ class News extends Component {
 
   componentDidMount() {
     axios
-      .get("/News")
+      .get("/api/News")
       .then(res => {
         this.setState({
           NewsData: res.data

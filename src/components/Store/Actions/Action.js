@@ -78,7 +78,7 @@ export const NewsSubmit = e => dispatch => {
     url: e.url
   };
   axios
-    .post(`/News`, Newsdata)
+    .post(`/api/News`, Newsdata)
     .then(res => {
       console.log("Data Send from actions");
     })
