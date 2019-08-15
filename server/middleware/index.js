@@ -2,7 +2,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 module.exports = (app, express, mongoose) => {
-  app.use(express.static(path.resolve(__dirname, "../../build")));
+  app.use(express.static(path.resolve(__dirname, "./build")));
   app.use(bodyParser.json());
   mongoose
     .connect(
