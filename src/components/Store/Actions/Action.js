@@ -78,13 +78,14 @@ export const NewsSubmit = e => dispatch => {
     url: e.url
   };
   axios
-    .post(`/api/News`, Newsdata)
-    .then(res => {
-      console.log("Data Send from actions");
-    })
-    .catch(error => {
-      console.log("error", error);
-    });
+  .post(`/api/News`, Newsdata)
+  .then(res => {
+    console.log("Data Send from actions");
+  })
+  .catch(error => {
+    console.log("error", error);
+  });
+  document.getElementById("newfield").innerText='';
   dispatch({ type: types.SUBMIT, payload: e });
 };
 

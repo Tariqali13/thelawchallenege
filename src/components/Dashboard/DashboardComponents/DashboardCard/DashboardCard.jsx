@@ -32,7 +32,7 @@ class DashboardCards extends Component {
       });
 
     axios
-      .get("/News")
+      .get("/api/News")
       .then(res => {
         this.setState({
           News: res.data

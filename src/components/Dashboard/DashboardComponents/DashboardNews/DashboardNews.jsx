@@ -33,6 +33,7 @@ class DashboardNews extends Component {
     NewsSubmit = e => {
         e.preventDefault();
         this.props.changeState(this.state);
+        toast.success('News upload success')
     };
     onInputChange = e => {
         e.preventDefault();
@@ -94,17 +95,17 @@ class DashboardNews extends Component {
                             <Progress max="100" color="success" value={this.state.progress} >{Math.round(this.state.progress, 2)}%</Progress>
                         </Form.Group>
                         <Form.Group controlId="formBasicFile" className="newformwidth">
-                            <Form.Control type="text" name="NewsTitle" placeholder="Enter Title" onChange={this.onInputChange} />
+                            <Form.Control type="text" id="newfield" name="NewsTitle" placeholder="Enter Title" onChange={this.onInputChange} />
 
                         </Form.Group>
 
                         <Form.Group controlId="formBasicText" className="newformwidth">
-                            <Form.Control as="textarea" rows="2" name="NewsText" placeholder="News" onChange={this.onInputChange} />
+                            <Form.Control as="textarea" id="newfield" rows="2" name="NewsText" placeholder="News" onChange={this.onInputChange} />
                         </Form.Group>
 
 
                         <Form.Group controlId="exampleForm.ControlTextarea1" className="newformwidth">
-                            <Form.Control as="textarea" rows="5" name="NewsDesc" placeholder="Additional Info" onChange={this.onInputChange} />
+                            <Form.Control as="textarea" id="newfield" rows="5" name="NewsDesc" placeholder="Additional Info" onChange={this.onInputChange} />
                         </Form.Group>
                         <Button variant="primary" type="submit">
                             Upload
