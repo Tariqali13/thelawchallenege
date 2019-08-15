@@ -103,8 +103,8 @@ app.use("/firebaseUploads", imageroutes);
 // image.find().then(resp=>res.json(resp))
 // })
 app.get('*', function(req, res) {
-  res.sendFile(path.resolve(__dirname, '../build'), function(err) {
-  if(err) return res.status(500).send(err);
+  res.sendFile(path.resolve(__dirname, '../build/index.html'), function(err) {
+  if(err) return res.status(500).send("index server error",err);
   })
 })
 
