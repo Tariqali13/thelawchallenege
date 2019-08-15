@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>http://www.thelawchallenge.org</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/About</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/News</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/Gallery</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/ContactUs</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/Register</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/Login</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/RewardandPrizes</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/Sponsorship</loc><priority>0.5</priority></url>
+<url><loc>http://thelawchallenge.org/CompetitionDetails</loc><priority>0.5</priority></url>
 </urlset>

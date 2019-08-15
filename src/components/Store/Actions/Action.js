@@ -2,6 +2,7 @@ import * as types from "../Constants/Constants";
 import axios from "axios";
 import setAuthToken from "../../../setAuthToken";
 import jwt_decode from "jwt-decode";
+import NewDetails from "../../News/NewDetails";
 
 // cons = "http://localhost:6600";
 export const onInputChange = e => {
@@ -70,7 +71,7 @@ export const handleSubmit2 = e => dispatch => {
   dispatch({ type: types.SUBMIT, payload: e });
 };
 
-export const NewsSubmit = e => dispatch => {
+export const NewsSubmit = e => (dispatch, getState) => {
   const Newsdata = {
     NewsTitle: e.NewsTitle,
     NewsText: e.NewsText,
@@ -78,15 +79,15 @@ export const NewsSubmit = e => dispatch => {
     url: e.url
   };
   axios
-  .post(`/api/News`, Newsdata)
-  .then(res => {
-    console.log("Data Send from actions");
-  })
-  .catch(error => {
-    console.log("error", error);
-  });
-  document.getElementById("newfield").innerText='';
+    .post(`/api/News`, Newsdata)
+    .then(res => {
+      console.log("Data Send from actions");
+    })
+    .catch(error => {
+      console.log("error", error);
+    });
   dispatch({ type: types.SUBMIT, payload: e });
+
 };
 
 // export const  reset=() =>{
