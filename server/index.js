@@ -12,8 +12,6 @@ const passport = require("passport");
 module.require("./middleware")(app, express, mongoose);
 
 
-app.use(express.static(path.resolve(__dirname, "../build")));
-  app.use(bodyParser.json());
 // mongoose
 //   .connect(
 //     "mongodb+srv://vvorkclass103:s12345@cluster0-aoeoc.mongodb.net/test?retryWrites=true&w=majority",
