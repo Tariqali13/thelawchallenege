@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import setAuthToken from './setAuthToken';
@@ -40,10 +40,10 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router basename="/">
+        <Router basename="/HOME">
           <Switch>
             <Route path='/' exact component={Home}></Route>
-            {/* <Route path='/Home' exact component={Home}></Route> */}
+            <Route path='/Home' exact component={Home}></Route>
             <Route path='/About' exact component={About}></Route>
             <Route path='/News' exact component={News}></Route>
             <Route path='/Gallery' exact component={Gallery}></Route>
