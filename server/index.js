@@ -100,11 +100,11 @@ app.use("/firebaseUploads", imageroutes);
 // image.find().then(resp=>res.json(resp))
 // })
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, './build/index.html'), function(err) {
-      if (err) {
-        res.status(500).send(err)
-      }
-    })
+  res.sendFile(path.join(__dirname, '../build/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
 })
 
 const port = process.env.PORT || 6600;
