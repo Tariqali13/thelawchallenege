@@ -18,3 +18,9 @@ module.exports = (app, express, mongoose) => {
   mongoose.Promise = global.Promise;
   mongoose.set("bufferCommands", false);
 };
+
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname, '../build'), function(err) {
+  if(err) return res.status(500).send(err);
+  })
+})
