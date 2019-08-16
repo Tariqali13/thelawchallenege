@@ -11,7 +11,9 @@ import axios from 'axios';
 class Gallery extends React.Component {
     state = {
         data2: data2,
-        images : []
+        images : [],
+        currentPage: 1,
+        todosPerPage: 3
     };
     componentDidMount() {
         axios.get("/firebaseUploads")
@@ -37,7 +39,7 @@ class Gallery extends React.Component {
         const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
         const currentTodos = images.slice(indexOfFirstTodo, indexOfLastTodo);
 
-        let response = this.state.images.map((value, index) => {
+        let response = currentTodos.map((value, index) => {
             return <MDBCol md="5" key={index}>
                 <figure>
                     <img
