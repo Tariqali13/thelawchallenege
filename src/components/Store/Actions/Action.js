@@ -22,7 +22,8 @@ export const handleSubmit = e => dispatch => {
   axios
     .post(`/send`, mails)
     .then(res => {
-      console.log("Data Send from actions");
+      document.querySelector("input").value = "";
+
     })
     .catch(err => {
       console.log("error", err);
@@ -81,7 +82,8 @@ export const NewsSubmit = e => (dispatch, getState) => {
   axios
     .post(`/api/News`, Newsdata)
     .then(res => {
-      console.log("Data Send from actions");
+      document.querySelector("#newfield").value = "";
+
     })
     .catch(error => {
       console.log("error", error);
