@@ -41,7 +41,6 @@ export default function (state = initialState, action) {
                 [action.payload.name]: action.payload.value
             }
         case types.SUBMIT:
-            console.log("action working", action.payload);
             return ({
                 ...action.payload,
             })
