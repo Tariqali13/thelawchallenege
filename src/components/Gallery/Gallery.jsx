@@ -11,9 +11,11 @@ import axios from 'axios';
 class Gallery extends React.Component {
     state = {
         data2: data2,
-        images : [],
+        images: [],
         currentPage: 1,
-        todosPerPage: 3
+        todosPerPage: 10,
+        clasactive: false,
+        id: 1,
     };
     componentDidMount() {
         axios.get("/firebaseUploads")
@@ -25,12 +27,15 @@ class Gallery extends React.Component {
             })
             .catch(e => { console.log(e) })
     }
-    handleClick=(event)=> {
+    handleClick = (event) => {
         this.setState({
-          currentPage: Number(event.target.id)
+            currentPage: Number(event.target.id),
+            clasactive: true,
+            id: event.target.id,
         });
-      }
-  
+        console.log(event.target.id);
+    }
+
     render() {
         const { images, currentPage, todosPerPage } = this.state;
 
@@ -47,26 +52,34 @@ class Gallery extends React.Component {
                         src={value.imageName}
                         alt="Gallery"
                         className="img-fluid"
-                      
+
                     />
                 </figure>
             </MDBCol>
         })
         const pageNumbers = [];
-      for (let i = 1; i <= Math.ceil(images.length / todosPerPage); i++) {
-        pageNumbers.push(i);
-      }
-      const renderPageNumbers = pageNumbers.map(number => {
-        return (
-          <li
-            key={number}
-            id={number}
-            onClick={this.handleClick}
-          >
-            {number}
-          </li>
-        );
-      });
+        for (let i = 1; i <= Math.ceil(images.length / todosPerPage); i++) {
+            pageNumbers.push(i);
+        }
+        const renderPageNumbers = pageNumbers.map((number, index) => {
+            return (
+                <div className="galeryindex md-4" key={index}>
+                    <div
+                        className="galerylistindex btn"
+                        key={number}
+                        id={number}
+                        onClick={this.handleClick}
+                        style={
+                            (this.state.id == number)
+                                ? { background: "cornflowerblue", color: "white" }
+                                : { background: "white", color: "black" }
+                        }
+                    >
+                        {number}
+                    </div>
+                </div>
+            );
+        });
         let response2 = this.state.data2.map((value, index) => {
             return (
                 <div className='stacks2' key={index}>
@@ -113,7 +126,17 @@ class Gallery extends React.Component {
                                     </div>
 
                                 </MDBContainer>
-                                {renderPageNumbers}
+                                <MDBContainer>
+                                    <div className="mdb-lightbox no-margin">
+                                        <MDBRow>
+                                            {response}
+                                        </MDBRow>
+                                    </div>
+
+                                </MDBContainer>
+                                <div className="row pl-3 ml-1 pr-3">
+                                    {renderPageNumbers}
+                                </div>
                             </section>
                         </div>
                         <div className="contact_sidebar">

@@ -14,10 +14,10 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    background: -webkit-gradient(linear, left bottom, right top, from(rgba(9, 23, 102, 0.7)), to(rgba(9, 36, 153, 0.8))), url('../.../../../../assets/images/gallery.jpg') no-repeat fixed !important;
-    background: -webkit-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/gallery.jpg') no-repeat fixed !important;
-    background: -o-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/gallery.jpg') no-repeat fixed !important;
-    background: linear-gradient(to top right, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/gallery.jpg') no-repeat fixed !important;
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(9, 23, 102, 0.7)), to(rgba(9, 36, 153, 0.8))), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: -webkit-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: -o-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: linear-gradient(to top right, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../assets/images/slider2.jpg') no-repeat fixed !important;
     background-size: cover !important;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -52,4 +52,23 @@
   .gallery figure img{
     border-radius: 10px;
     overflow: hidden;
+  }
+  .galeryindex {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 2px;
+    overflow: hidden;
+  }
+  
+  .galerylistindex {
+    width: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size:1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
