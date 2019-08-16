@@ -23,7 +23,6 @@ class Gallery extends React.Component {
                 this.setState({
                     images: res.data
                 })
-                console.log(res.data)
             })
             .catch(e => { console.log(e) })
     }
@@ -33,7 +32,6 @@ class Gallery extends React.Component {
             clasactive: true,
             id: event.target.id,
         });
-        console.log(event.target.id);
     }
 
     render() {

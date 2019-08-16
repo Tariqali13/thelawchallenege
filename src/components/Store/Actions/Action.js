@@ -64,7 +64,7 @@ export const handleSubmit2 = e => dispatch => {
   axios
     .post(`/Reg`, Allmembers)
     .then(res => {
-      console.log("Data Send from actions");
+      console.log("Data Send");
     })
     .catch(error => {
       console.log("error", error);
