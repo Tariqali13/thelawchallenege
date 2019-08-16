@@ -65,7 +65,7 @@ class Gallery extends React.Component {
             return (
                 <div className="galeryindex md-4" key={index}>
                     <div
-                        className="galerylistindex btn"
+                        className="galerylistindex btn w-100"
                         key={number}
                         id={number}
                         onClick={this.handleClick}
