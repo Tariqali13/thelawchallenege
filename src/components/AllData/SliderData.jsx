@@ -11,13 +11,5 @@ export let data=[
     {
         images:"slider4",
     },
-    {
-        images:"slider5",
-    },
-    {
-        images:"slider6",
-    },
-    {
-        images:"slider7",
-    }
+ 
 ]
