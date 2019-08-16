@@ -100,12 +100,12 @@ class DashboardNews extends Component {
                         </Form.Group>
 
                         <Form.Group controlId="formBasicText" className="newformwidth">
-                            <Form.Control as="textarea" id="newfield" rows="2" name="NewsText" placeholder="News" onChange={this.onInputChange} />
+                            <Form.Control as="textarea" id="newfield2" rows="2" name="NewsText" placeholder="News" onChange={this.onInputChange} />
                         </Form.Group>
 
 
                         <Form.Group controlId="exampleForm.ControlTextarea1" className="newformwidth">
-                            <Form.Control as="textarea" id="newfield" rows="5" name="NewsDesc" placeholder="Additional Info" onChange={this.onInputChange} />
+                            <Form.Control as="textarea" id="newfield3" rows="5" name="NewsDesc" placeholder="Additional Info" onChange={this.onInputChange} />
                         </Form.Group>
                         <Button variant="primary" type="submit">
                             Upload

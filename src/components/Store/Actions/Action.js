@@ -64,7 +64,8 @@ export const handleSubmit2 = e => dispatch => {
   axios
     .post(`/Reg`, Allmembers)
     .then(res => {
-      console.log("Data Send");
+      document.querySelector("input").value = "";
+
     })
     .catch(error => {
       console.log("error", error);
@@ -83,7 +84,8 @@ export const NewsSubmit = e => (dispatch, getState) => {
     .post(`/api/News`, Newsdata)
     .then(res => {
       document.querySelector("#newfield").value = "";
-
+      document.querySelector("#newfield2").value = "";
+      document.querySelector("#newfield3").value = "";
     })
     .catch(error => {
       console.log("error", error);
