@@ -13,10 +13,10 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    background: -webkit-gradient(linear, left bottom, right top, from(rgba(9, 23, 102, 0.7)), to(rgba(9, 36, 153, 0.8))), url('../.../../../../../assets/images/slider3.jpg') no-repeat fixed !important;
-    background: -webkit-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider3.jpg') no-repeat fixed !important;
-    background: -o-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider3.jpg') no-repeat fixed !important;
-    background: linear-gradient(to top right, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider3.jpg') no-repeat fixed !important;
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(9, 23, 102, 0.7)), to(rgba(9, 36, 153, 0.8))), url('../.../../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: -webkit-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: -o-linear-gradient(bottom left, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider2.jpg') no-repeat fixed !important;
+    background: linear-gradient(to top right, rgba(9, 23, 102, 0.7), rgba(9, 36, 153, 0.8)), url('../.../../../../../assets/images/slider2.jpg') no-repeat fixed !important;
     background-size: cover !important;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
