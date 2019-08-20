@@ -22,7 +22,7 @@ export const handleSubmit = e => dispatch => {
   axios
     .post(`/send`, mails)
     .then(res => {
-      document.querySelector("input").value = "";
+      document.querySelectorAll("input").value = "";
 
     })
     .catch(err => {
@@ -64,7 +64,7 @@ export const handleSubmit2 = e => dispatch => {
   axios
     .post(`/Reg`, Allmembers)
     .then(res => {
-      document.querySelector("input").value = "";
+      document.querySelectorAll("input").value = "";
 
     })
     .catch(error => {
