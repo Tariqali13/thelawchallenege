@@ -19,7 +19,7 @@ state={}
                     <div className="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul className="navbar-nav ml-auto text-center">
                             <li className="nav-items custom_navitem " >
-                                <NavLink to='/' className="nav-link custom_navbar" activeClassName="active">HOME</NavLink>
+                                <NavLink to='/Home' className="nav-link custom_navbar" activeClassName="active">HOME</NavLink>
                             </li>
                             <li className="nav-items custom_navitem ">
                                 <NavLink to='/About' className="nav-link  custom_navbar " activeClassName="active" >ABOUT</NavLink>
