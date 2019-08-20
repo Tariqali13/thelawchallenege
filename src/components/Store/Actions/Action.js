@@ -22,7 +22,13 @@ export const handleSubmit = e => dispatch => {
   axios
     .post(`/send`, mails)
     .then(res => {
-      document.querySelectorAll("input").value = "";
+      document.querySelector("textarea").value="";
+      var allinputs = document.querySelectorAll("input");
+      console.log(allinputs);
+      var i;
+      for (i = 0; i < allinputs.length; i++) {
+          allinputs[i].value = "";
+      }
 
     })
     .catch(err => {
@@ -64,7 +70,12 @@ export const handleSubmit2 = e => dispatch => {
   axios
     .post(`/Reg`, Allmembers)
     .then(res => {
-      document.querySelectorAll("input").value = "";
+      var allinputs = document.querySelectorAll("input");
+      console.log(allinputs);
+      var i;
+      for (i = 0; i < allinputs.length; i++) {
+          allinputs[i].value = "";
+      }
 
     })
     .catch(error => {
