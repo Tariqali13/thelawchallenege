@@ -44,7 +44,7 @@ class Gallery extends React.Component {
         const currentTodos = images.slice(indexOfFirstTodo, indexOfLastTodo);
 
         let response = currentTodos.map((value, index) => {
-            return
+            return(
             <MDBCol md="5" key={index}>
                 <LazyLoad>
                     <figure>
@@ -58,6 +58,7 @@ class Gallery extends React.Component {
                     </figure>
                 </LazyLoad>
             </MDBCol>
+            )
         })
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(images.length / todosPerPage); i++) {
