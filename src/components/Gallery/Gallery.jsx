@@ -5,6 +5,7 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { data2 } from '../AllData/GalleryData';
 import axios from 'axios';
+import LazyLoad from 'react-lazyload';
 
 
 
@@ -43,16 +44,19 @@ class Gallery extends React.Component {
         const currentTodos = images.slice(indexOfFirstTodo, indexOfLastTodo);
 
         let response = currentTodos.map((value, index) => {
-            return <MDBCol md="5" key={index}>
-                <figure>
-                    <img
-                        index={index}
-                        src={value.imageName}
-                        alt="Gallery"
-                        className="img-fluid"
+            return
+            <MDBCol md="5" key={index}>
+                <LazyLoad>
+                    <figure>
+                        <img
+                            index={index}
+                            src={value.imageName}
+                            alt="Gallery"
+                            className="img-fluid"
 
-                    />
-                </figure>
+                        />
+                    </figure>
+                </LazyLoad>
             </MDBCol>
         })
         const pageNumbers = [];
