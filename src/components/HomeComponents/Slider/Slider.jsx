@@ -25,7 +25,7 @@ class Slider extends Component {
           <LazyLoad
               className="d-block w-100"
             placeholder={
-              <img src={require("../../../assets/images/loader.gif")} />
+              <img src={require("../../../assets/images/largerload.gif")} />
             }
           >
             <img

@@ -12,15 +12,9 @@ class Stacks extends Component {
       return (
         <div className="Stacks" key={index}>
           <div className="Stackimage">
-            <LazyLoad
-              placeholder={
-                <img src={require("../../../assets/images/loader.gif")} />
-              }
-            >
               <img
                 src={require(`../../../assets/images/${value.images}.jpg`)}
               />
-            </LazyLoad>
             <div
               className="Stack_color"
               style={{ background: value.color }}
