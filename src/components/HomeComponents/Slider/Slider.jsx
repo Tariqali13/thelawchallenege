@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import { data } from "../../AllData/SliderData";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import "react-lazy-load-image-component/src/effects/blur.css";
+import LazyLoad from "react-lazyload";
 class Slider extends Component {
   data = data;
   state = {
@@ -21,13 +22,16 @@ class Slider extends Component {
     let response = this.data.map((value, index) => {
       return (
         <Carousel.Item key={index}>
-          <LazyLoadImage
-            alt="First slide"
-            effect="blur"
-            className="d-block w-100"
-            src={require(`../../../assets/images/${value.images}.jpg`)}
-            beforeLoad={require("../../../assets/images/loader.gif")}
-          />
+          <LazyLoad
+            placeholder={
+              <img src={require("../../../assets/images/loader.gif")} />
+            }
+          >
+            <img
+              className="d-block w-100"
+              src={require(`../../../assets/images/${value.images}.jpg`)}
+            />
+          </LazyLoad>
         </Carousel.Item>
       );
     });
