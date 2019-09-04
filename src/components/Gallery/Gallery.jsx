@@ -50,7 +50,7 @@ class Gallery extends React.Component {
         <MDBCol md="5" key={index}>
           <LazyLoadImage alt='gallery-image' effect="blur" index={index}
               className="img-fluid"
-              src={value.imageName} />
+              src={value.imageName} beforeLoad={require('../../assets/images/loader.gif')}/>
     
         </MDBCol>
       );
