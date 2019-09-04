@@ -26,7 +26,7 @@ class Slider extends Component {
             effect="blur"
             className="d-block w-100"
             src={require(`../../../assets/images/${value.images}.jpg`)}
-            // beforeLoad={require("../../assets/images/loader.gif")}
+            beforeLoad={require("../../assets/images/loader.gif")}
           />
         </Carousel.Item>
       );

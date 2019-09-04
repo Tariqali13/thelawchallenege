@@ -48,10 +48,18 @@ class Gallery extends React.Component {
     let response = currentTodos.map((value, index) => {
       return (
         <MDBCol md="5" key={index}>
-          <LazyLoadImage alt='gallery-image' effect="blur" index={index}
+          <figure>
+            <LazyLoadImage
+              alt="gallery-image"
+              effect="blur"
+              index={index}
               className="img-fluid"
-              src={value.imageName} visibleByDefault={value.imageName === '../../assets/images/loader.gif'}/>
-    
+              src={value.imageName}
+              visibleByDefault={
+                value.imageName === "../../assets/images/loader.gif"
+              }
+            />
+          </figure>
         </MDBCol>
       );
     });
