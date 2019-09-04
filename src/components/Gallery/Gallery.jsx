@@ -5,8 +5,8 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { data2 } from "../AllData/GalleryData";
 import axios from "axios";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+
+import LazyLoad from "react-lazyload";
 
 class Gallery extends React.Component {
   state = {
@@ -49,16 +49,19 @@ class Gallery extends React.Component {
       return (
         <MDBCol md="5" key={index}>
           <figure>
-            <LazyLoadImage
-              alt="gallery-image"
-              effect="blur"
-              index={index}
+            <LazyLoad
               className="img-fluid"
-              src={value.imageName}
-              visibleByDefault={
-                value.imageName === "../../assets/images/loader.gif"
+              placeholder={
+                <img src={require("../../assets/images/loader.gif")} />
               }
-            />
+            >
+              <img
+                index={index}
+                alt="gallery-image"
+                className="img-fluid"
+                src={value.imageName}
+              />
+            </LazyLoad>
           </figure>
         </MDBCol>
       );

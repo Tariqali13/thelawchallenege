@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { data } from "../../AllData/Stackdata";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import LazyLoad from "react-lazyload";
+
 class Stacks extends Component {
   state = {
     data: data
@@ -12,13 +12,15 @@ class Stacks extends Component {
       return (
         <div className="Stacks" key={index}>
           <div className="Stackimage">
-            <LazyLoadImage
-              alt="Stack Background"
-              effect="blur"
-              src={require(`../../../assets/images/${value.images}.jpg`)}
-            //   beforeLoad={require("../../assets/images/loader.gif")}
-            />
-
+            <LazyLoad
+              placeholder={
+                <img src={require("../../../assets/images/loader.gif")} />
+              }
+            >
+              <img
+                src={require(`../../../assets/images/${value.images}.jpg`)}
+              />
+            </LazyLoad>
             <div
               className="Stack_color"
               style={{ background: value.color }}
