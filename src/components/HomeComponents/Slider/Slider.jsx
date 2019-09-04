@@ -23,9 +23,9 @@ class Slider extends Component {
       return (
         <Carousel.Item key={index}>
           <LazyLoad
-              className="d-block w-100"
+             
             placeholder={
-              <img src={require("../../../assets/images/largerload.gif")} />
+              <img  className="d-block w-100" src={require("../../../assets/images/largerload.gif")} />
             }
           >
             <img
