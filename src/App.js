@@ -42,27 +42,27 @@ class App extends Component {
       <Provider store={store}>
         <Router >
           <Switch>
-            {/* <Route path='/' exact component={Home}></Route>
+            <Route path='/' exact component={Home}></Route>
             <Route path='/Home' exact component={Home}></Route>
             <Route path='/About' exact component={About}></Route>
             <Route path='/News' exact component={News}></Route>
             <Route path='/Gallery' exact component={Gallery}></Route>
             <Route path='/ContactUs' exact component={ContactUs}></Route>
             <Route path='/Register' exact component={Register}></Route >
-            <Route path='/Login' exact component={Login}></Route > */}
+            <Route path='/Login' exact component={Login}></Route >
 
             {/* <Route path='/Registeruser' exact component={Registeruser}></Route >   */}
 
-            {/* <Route path="/News/:id" exact component={NewDetails} />
+            <Route path="/News/:id" exact component={NewDetails} />
             <Route path='/Sponsorship' exact component={Sponsorship}></Route >
             <Route path='/RewardandPrizes' exact component={RewardandPrizes}></Route >
-            <Route path='/CompetitionDetails' exact component={CompetitionDetails}></Route> */}
+            <Route path='/CompetitionDetails' exact component={CompetitionDetails}></Route>
 
-            {/* <Route path='/Dashboard' exact component={Dashboard}></Route >
+            <Route path='/Dashboard' exact component={Dashboard}></Route >
             <Route path='/UserReg' exact component={UserReg}></Route >
             <Route path='/DashboardMails' exact component={DashboardMails}></Route >
             <Route path='/DashboardGallery' exact component={DashboardGallery}></Route >
-            <Route path='/DashboardNews' exact component={DashboardNews}></Route > */}
+            <Route path='/DashboardNews' exact component={DashboardNews}></Route >
 
           </Switch>
         </Router>
