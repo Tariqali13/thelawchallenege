@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import setAuthToken from './setAuthToken';
 import Home from './components/Home';
+import duesclear from './components/duesclear';
 import About from './components/About/About';
 import CompetitionDetails from './components/CompetitionDetails/CompetitionDetails';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -42,18 +43,18 @@ class App extends Component {
       <Provider store={store}>
         <Router >
           <Switch>
-            <Route path='/' exact component={Home}></Route>
-            <Route path='/Home' exact component={Home}></Route>
+            <Route path='/' exact component={duesclear}></Route>
+            {/* <Route path='/Home' exact component={Home}></Route>
             <Route path='/About' exact component={About}></Route>
             <Route path='/News' exact component={News}></Route>
             <Route path='/Gallery' exact component={Gallery}></Route>
             <Route path='/ContactUs' exact component={ContactUs}></Route>
             <Route path='/Register' exact component={Register}></Route >
-            <Route path='/Login' exact component={Login}></Route >
+            <Route path='/Login' exact component={Login}></Route > */}
 
             {/* <Route path='/Registeruser' exact component={Registeruser}></Route >   */}
 
-            <Route path="/News/:id" exact component={NewDetails} />
+            {/* <Route path="/News/:id" exact component={NewDetails} />
             <Route path='/Sponsorship' exact component={Sponsorship}></Route >
             <Route path='/RewardandPrizes' exact component={RewardandPrizes}></Route >
             <Route path='/CompetitionDetails' exact component={CompetitionDetails}></Route>
@@ -62,7 +63,7 @@ class App extends Component {
             <Route path='/UserReg' exact component={UserReg}></Route >
             <Route path='/DashboardMails' exact component={DashboardMails}></Route >
             <Route path='/DashboardGallery' exact component={DashboardGallery}></Route >
-            <Route path='/DashboardNews' exact component={DashboardNews}></Route >
+            <Route path='/DashboardNews' exact component={DashboardNews}></Route > */}
 
           </Switch>
         </Router>
