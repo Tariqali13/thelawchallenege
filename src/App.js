@@ -43,7 +43,7 @@ class App extends Component {
       <Provider store={store}>
         <Router >
           <Switch>
-            {/* <Route path='/' exact component={duesclear}></Route> */}
+            <Route path='/' exact component={Home}></Route>
             <Route path='/Home' exact component={Home}></Route>
             <Route path='/About' exact component={About}></Route>
             <Route path='/News' exact component={News}></Route>
