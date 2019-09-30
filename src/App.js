@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import store from './store';
 import setAuthToken from './setAuthToken';
 import Home from './components/Home';
-import duesclear from './components/duesclear';
 import About from './components/About/About';
 import CompetitionDetails from './components/CompetitionDetails/CompetitionDetails';
 import Dashboard from './components/Dashboard/Dashboard';
