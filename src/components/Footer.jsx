@@ -41,7 +41,7 @@ const Footer = () => {
                         <h4>Subscribe Us</h4>
                         <div className="social_icons">
                             <a target="_black" href="https://www.facebook.com/thelawchallenge"><i className="fab fa-facebook-f"></i></a>
-                            <a target="_black" href="https://www.instagram.com/thelawchallengeghana/"><i className="fab fa-instagram"></i></a>
+                            <a target="_black" href="https://www.instagram.com/lawchallengegh/"><i className="fab fa-instagram"></i></a>
                             <a target="_black" href="https://www.linkedin.com/showcase/thelawchallengeghana"><i className="fab fa-linkedin-in"></i></a>
                             <a target="_black" href="https://twitter.com/thelawchallenge"><i className="fab fa-twitter"></i></a>
                         </div>
