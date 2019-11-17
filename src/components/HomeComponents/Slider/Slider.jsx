@@ -40,22 +40,34 @@ class Slider extends Component {
       <div className="Slider_flex">
         <div className="Sponsoradds">
           <h3>Our Sponsors</h3>
-          <a href="https://websystechnology.org/" target="_blank">
+          <a href="#" target="_blank">
             <img
               className="Sponsors_image"
-              src={require("../../../assets/images/sponsor.jpeg")}
+              src={require("../../../assets/images/sponsor1.jpg")}
             />
           </a>
-          <a href="https://websystechnology.org/" target="_blank">
+          <a href="#" target="_blank">
             <img
               className="Sponsors_image"
-              src={require("../../../assets/images/sponsor.jpeg")}
+              src={require("../../../assets/images/sponsor2.jpg")}
             />
           </a>
-          <a href="https://websystechnology.org/" target="_blank">
+          <a href="#" target="_blank">
             <img
               className="Sponsors_image"
-              src={require("../../../assets/images/sponsor.jpeg")}
+              src={require("../../../assets/images/sponsor3.jpeg")}
+            />
+          </a>
+           <a href="#" target="_blank">
+            <img
+              className="Sponsors_image"
+              src={require("../../../assets/images/sponsor4.jpg")}
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              className="Sponsors_image"
+              src={require("../../../assets/images/sponsor5.jpg")}
             />
           </a>
         </div>
@@ -71,22 +83,34 @@ class Slider extends Component {
         <div className="Sponsoradds">
           <h3>Our Sponsors</h3>
 
-          <a href="https://websystechnology.org/" target="_blank">
+          <a href="#" target="_blank">
             <img
               className="Sponsors_image"
-              src={require("../../../assets/images/sponsor.jpeg")}
+              src={require("../../../assets/images/sponsor6.jpg")}
             />
           </a>
-          <a href="https://websystechnology.org/" target="_blank">
+          <a href="#" target="_blank">
             <img
               className="Sponsors_image"
-              src={require("../../../assets/images/sponsor.jpeg")}
+              src={require("../../../assets/images/sponsor7.jpg")}
             />
           </a>
-          <a href="https://websystechnology.org/" target="_blank">
+          <a href="#" target="_blank">
             <img
               className="Sponsors_image"
-              src={require("../../../assets/images/sponsor.jpeg")}
+              src={require("../../../assets/images/sponsor8.png")}
+            />
+          </a>
+           <a href="#" target="_blank">
+            <img
+              className="Sponsors_image"
+              src={require("../../../assets/images/sponsor10.jpg")}
+            />
+          </a>
+           <a href="https://www.websystechnology.org/" target="_blank">
+            <img
+              className="Sponsors_image"
+              src={require("../../../assets/images/sponsor11.png")}
             />
           </a>
         </div>

@@ -48,7 +48,7 @@ class ContactUs extends Component {
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15883.91197156854!2d-0.1970813!3d5.5702712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x38936ef85293e59!2sSwiss+Spirit+Hotel+%26+Suites+Alisa+Accra!5e0!3m2!1sen!2s!4v1557829074784!5m2!1sen!2s" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className='heading2'>
-                                <h5>Get In Touch with the organizers of The Law Challenge</h5>
+                                <h5>Get In Touch with the organizers of The Law Challenge, Ghana</h5>
                                 <p>(PRIMETIME GHANA) for all your inquiries</p>
                                 <div className='design4'></div>
                             </div>
