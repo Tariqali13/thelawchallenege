@@ -27,7 +27,7 @@
     "history": "^4.10.1",
     "indicative": "^5.0.8",
     "joi": "^14.3.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwt-decode": "^2.2.0",
     "logger": "0.0.1",
     "mdbreact": "^4.21.0",
